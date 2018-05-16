@@ -1,0 +1,21 @@
+extends layout
+
+block css
+  style(type='text/css').
+    .card-body {
+      font-size: 4em;
+    }
+
+
+block content
+  .row
+    .col
+      h1 Live Temperatures
+  .row
+    .col#temps
+
+
+
+block scripts
+  script(src='/socket.io/socket.io.js')
+  script(src='javascripts/livetemps.js')
